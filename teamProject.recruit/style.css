@@ -1,0 +1,304 @@
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.header-nav-wrap {
+    display: none;
+}
+
+.nav-list-wrap {
+    list-style: none;
+    padding: 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-logo-pic {
+    padding-top: 15px;
+}
+
+.main {
+    margin-top: 100px;
+    margin-left: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.welfare-wrap {
+    position: relative;
+    display: inline-block; /* インラインブロック要素として配置 */
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.welfare-pic {
+    display: block; /* インラインブロック要素からブロック要素に変更 */
+    max-width: 100%;
+    height: auto; /* 画像のサイズに合わせるため */
+}
+
+.welfare-word {
+    position: absolute;
+    top: 50%; /* 上端を中央に配置 */
+    left: 50%; /* 左端を中央に配置 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+    padding: 10px; /* テキストの周りに余白を設定 */
+    font-size:  3rem;
+}
+
+.nav-list {
+    display: inline;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+
+.pc-menu {
+    display: block;
+}
+
+.pc-nav-wrap {
+    display: flex;
+    list-style: none;
+}
+
+.sp-nav-wrap {
+    display: none;
+
+}
+
+.nav-list-wrap li {
+    margin-left: 20px;
+}
+
+.nav-entry {
+    background-color: rgb(255, 218, 54);
+    border-radius: 20px;
+}
+
+.nav-list {
+    padding: 10px 20px; /* パディングの調整 */
+}
+
+.walfare-content {
+    text-align: center; /* コンテンツ全体を中央に配置 */
+}
+
+.walfare-title {
+    font-size: 40px; /* タイトルのフォントサイズを調整 */
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.walfare-text {
+    font-size: 20px; /* テキストのフォントサイズを調整 */
+}
+
+.walfare-content-box {
+    margin-top: 50px;
+    background-color: lightgray;
+    text-align: center; /* コンテンツを中央に配置 */
+    margin: 0 auto;
+}
+
+.walfare-lists-wrap {
+    display: flex;
+    justify-content: center; /* 子要素を水平方向に中央配置 */
+    flex-wrap: wrap; /* 子要素を折り返す (必要に応じて) */
+    padding-top: 70px;
+}
+
+.walfare-lists {
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.walfare {
+    width: 250px;
+    margin-left: 50px;
+}
+
+
+.curriculum-content-box {
+    margin-top: 80px;
+    position: relative;
+}
+
+.curriculum-content {
+    position: absolute;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 0 0 10% 0;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 70%;
+    padding: 40px;
+}
+
+.curriculum-title {
+    color: rgb(23, 158, 255);
+    font-size: 30px;
+}
+
+.employees-pic-box {
+    display: inline-block;
+    background-color: #1fadc7;
+}
+
+.employees-pic {
+    opacity: 0.5;
+    display: block;
+}
+
+.entry-detail-wrap {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+
+.detail-wrap {
+    background-color: #edd100;
+    position: relative;
+    width: 50%;
+    height: 250px;
+}
+
+.detail-word {
+    font-size: 150px;
+    font-family: La Belle Aurore,cursive;
+    padding: 0px;
+    opacity: .3;
+    letter-spacing: .2em;
+    color: white;
+    margin: 15px;
+}
+
+.detail {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    top: 48%;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    z-index: 2;
+    text-decoration: none;
+    padding-left: 60px;
+}
+
+.detail-box {
+    display: flex;
+}
+
+.entry-pic-wrap {
+    background-color: #edd100;
+    display: inline-block;
+}
+
+.entry-pic {
+    opacity: 0.5;
+    display: block;
+}
+
+.footer-wrap {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer-company-logo {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.footer-lists-wrap {
+    display: flex;
+    margin-left: 300px;
+}
+
+.footer-lists {
+    margin-left: 60px;
+}
+
+.footer-list-wrap {
+    list-style: none;
+}
+
+.footer-list-list {
+    color: rgb(132, 125, 125);
+}
+
+.right-sign-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+
+.sp-menu {
+    display: block;
+}
+
+.sp-nav-wrap {
+    /* スマートフォン向けメニューのスタイルを設定 */
+}
+
+.pc-nav-wrap {
+    display: none;
+}
+
+.sp-menu__box {
+    position: fixed;  /* 位置を固定 */
+    top: 0;  /* 最上部 */
+    right: 0;  /* 右端 */
+    /* 中の要素を上下中央寄せ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* サイズ指定 */
+    height: 60px;
+    width: 60px;
+    /* 最前面にする */
+    z-index: 100;
+    background-color: #3584bb;
+}
+
+/* メニューの白線を疑似要素を使って3本作成 */
+.sp-menu__box span,         /* 真ん中の線 */
+.sp-menu__box span:before,  /* 上の線 */
+.sp-menu__box span:after {  /* 下の線 */
+/* contentの値を指定しないと疑似要素が生成されない */
+    content: "";
+    /* ３本線のサイズと色を指定 */
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    /* 3本線の位置は絶対位置で指定 */
+    position: absolute;
+    }
+    /* 上の線の位置 */
+    .sp-menu__box span:before {
+    /* 真ん中の線と離す距離 */
+    bottom: 8px;
+    }
+    /* 下の線の位置 */
+    .sp-menu__box span:after {
+        /* 真ん中の線と離す距離 */
+        top: 8px;
+    }
+
+}
